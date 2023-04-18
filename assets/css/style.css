@@ -14,6 +14,10 @@ html{
     background-color: black;
 }
 
+#nav{
+    display: inline-block;
+}
+
 #nav li{
     display: inline-block;
     position: relative;
@@ -26,36 +30,56 @@ html{
 #nav > li > a{
     color: white;
     text-transform: uppercase;
+    line-height: 46px;
 }
 
-#nav li a{
-    line-height: 46px;
+#nav li a{ 
+    padding: 0 16px;
     text-decoration: none;
-    padding: 0 24px;
     display: block;
-    
 }
 #nav .subnav li:hover a,
 #nav > li:hover > a{
-    color: black;
-    background-color: gray;
-    
+    color:black;
+    background-color: #ccc;
 }
 
 #nav .subnav{
-    position: absolute;
     display: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    top: 46px;
+    position: absolute;
+    top:46px;
     left: 0;
-    min-width: 160px;
+    min-width: 160px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
 }
 
 #nav .subnav li{
     width: 100%;
 }
-#nav .subnav a { 
+
+#nav .subnav a{
     color: black;
     line-height: 38px;
-    padding: 0 12px;
+    padding: 0 8px;
+}
+
+#nav .nav_arrow_down{
+    font-size: 12px;
+}
+
+#header .search{
+    float:right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search:hover{
+    background-color: red;
+}
+
+#header .search_icon{
+    color: white;
+    font-size: 16px;
+    line-height: 46px;
+    
 }
