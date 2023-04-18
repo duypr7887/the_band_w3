@@ -1,0 +1,61 @@
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    line-height: 46px;
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+    
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: black;
+    background-color: gray;
+    
+}
+
+#nav .subnav{
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top: 46px;
+    left: 0;
+    min-width: 160px;
+}
+
+#nav .subnav li{
+    width: 100%;
+}
+#nav .subnav a { 
+    color: black;
+    line-height: 38px;
+    padding: 0 12px;
+}
