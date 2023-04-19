@@ -12,8 +12,25 @@ html{
 #header{
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#header .search_btn{
+    float: right;
+}
+#header .search_btn:hover{
+    background-color: red;
+    cursor: pointer;
 }
 
+#header .search_item{
+    color: white;
+    font-size: 18px;
+    line-height: 46px;
+    padding: 0 19px;
+}
 #nav{
     display: inline-block;
 }
@@ -29,57 +46,43 @@ html{
 
 #nav > li > a{
     color: white;
-    text-transform: uppercase;
     line-height: 46px;
+    text-transform: uppercase;
+}
+#nav li a{ 
+    padding: 0 24px;
+    text-decoration: none;
+    display:block;
 }
 
-#nav li a{ 
-    padding: 0 16px;
-    text-decoration: none;
-    display: block;
-}
 #nav .subnav li:hover a,
 #nav > li:hover > a{
-    color:black;
-    background-color: #ccc;
+    color: black;
+    background-color: gray;
+}
+
+#nav .subnav li {
+    width: 100%;
 }
 
 #nav .subnav{
     display: none;
     position: absolute;
-    top:46px;
+    min-width: 160px;
+    top: 46px;
     left: 0;
-    min-width: 160px; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
-}
-
-#nav .subnav li{
-    width: 100%;
-}
+    box-shadow:  0 0 10px rgba(0,0,0,0.3);
+} 
 
 #nav .subnav a{
     color: black;
     line-height: 38px;
-    padding: 0 8px;
 }
 
-#nav .nav_arrow_down{
+#nav .arrow_down{
     font-size: 12px;
 }
 
-#header .search{
-    float:right;
-    padding: 0 21px;
-    cursor: pointer;
-}
-
-#header .search:hover{
-    background-color: red;
-}
-
-#header .search_icon{
-    color: white;
-    font-size: 16px;
-    line-height: 46px;
-    
+#slider{
+    margin-top: 46px;
 }
